@@ -28,23 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            listView1 = new ListView();
+            lstvXMLData = new ListView();
             SuspendLayout();
             // 
-            // listView1
+            // lstvXMLData
             // 
-            listView1.Location = new Point(12, 24);
-            listView1.Name = "listView1";
-            listView1.Size = new Size(757, 414);
-            listView1.TabIndex = 0;
-            listView1.UseCompatibleStateImageBehavior = false;
+            lstvXMLData.Location = new Point(12, 24);
+            lstvXMLData.Name = "lstvXMLData";
+            lstvXMLData.Size = new Size(757, 414);
+            lstvXMLData.TabIndex = 0;
+            lstvXMLData.UseCompatibleStateImageBehavior = false;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(listView1);
+            Controls.Add(lstvXMLData);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -52,6 +52,6 @@
 
         #endregion
 
-        private ListView listView1;
+        private ListView lstvXMLData;
     }
 }

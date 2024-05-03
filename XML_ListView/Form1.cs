@@ -13,16 +13,16 @@ namespace XML_ListView
             URLString = "https://www.w3schools.com/xml/cd_catalog.xml";
             reader = new XmlTextReader(URLString);
 
-            listView1.View = View.Details;
-            listView1.GridLines = true;
-            listView1.FullRowSelect = true;
+            lstvXMLData.View = View.Details;
+            lstvXMLData.GridLines = true;
+            lstvXMLData.FullRowSelect = true;
 
-            listView1.Columns.Add("Title", 150);
-            listView1.Columns.Add("Artist", 150);
-            listView1.Columns.Add("Country", 100);
-            listView1.Columns.Add("Company", 100);
-            listView1.Columns.Add("Price", 100);
-            listView1.Columns.Add("Year", 100);
+            lstvXMLData.Columns.Add("Title", 150);
+            lstvXMLData.Columns.Add("Artist", 150);
+            lstvXMLData.Columns.Add("Country", 100);
+            lstvXMLData.Columns.Add("Company", 100);
+            lstvXMLData.Columns.Add("Price", 100);
+            lstvXMLData.Columns.Add("Year", 100);
 
 
             while (reader.Read())
@@ -60,7 +60,7 @@ namespace XML_ListView
                         else if (reader.NodeType == XmlNodeType.EndElement && reader.Name == "CD")
                         {
                             ListViewItem item = new ListViewItem(new[] { title, artist, country, company, price, year });
-                            listView1.Items.Add(item);
+                            lstvXMLData.Items.Add(item);
                             break;
                         }
                     }
